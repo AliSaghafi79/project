@@ -1,0 +1,27 @@
+//.ali(){
+//  background-color: red;
+//  width: 200px;
+//  height: 400px;
+//  margin: 0 auto;
+//}
+//
+//.div1{
+//  .ali;
+//  &:hover{
+//    background-color: greenyellow;
+//  }
+//}
+//
+
+@vari : red ;
+@property1: width ;
+@property2: height ;
+@img: "./ali.png";
+.div1{
+  background-image: url("@{img}");
+  @{property1}:200px;
+  @{property2}:200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
